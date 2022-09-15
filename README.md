@@ -14,9 +14,9 @@ To become familiar with HTML5, CSS, and JavaScript.
 
 (3) Your page should demonstrate the following features:
 
- 1)     A factorial calculator. The calculator will “prompt” the user for a positive number and “alert” the user if the number entered by the user is negative. The default input value for the prompt is 8. The computation should be done with a function.
+  (1)     A factorial calculator. The calculator will “prompt” the user for a positive number and “alert” the user if the number entered by the user is negative. The default input value for the prompt is 8. The computation should be done with a function.
 
- 2)     An interactive animation. Add a small image (your thumbnail photo would be perfect) on your page.  When a user clicks on any part of your page, the center of the image will move to the cursor location. The “move” has to be animated, i.e., the image moves “smoothly” to the new location, it should not just jump there.
+  (2)     An interactive animation. Add a small image (your thumbnail photo would be perfect) on your page.  When a user clicks on any part of your page, the center of the image will move to the cursor location. The “move” has to be animated, i.e., the image moves “smoothly” to the new location, it should not just jump there.
 
 (4) Feel self-motivated to do more? Add anything else you like and list the names of the additional items at the top of your page.
 
