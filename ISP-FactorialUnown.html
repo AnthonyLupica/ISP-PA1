@@ -15,11 +15,13 @@
         <title> ISP-FactorialUnown </title>
         <!-- favicon -->
         <link rel="icon" type="image/x-icon" href="https://img.pokemondb.net/sprites/home/normal/unown-em.png">
+        <!-- include external script -->
+        <script src="ISP-FactorialUnown.js"></script>
     </head>
-    <body>
+    <body onload="whatBrowser()">
         <h1 style="text-align: center; font-family: lucida sans;"> Internet Systems Programming </h1>
         <h2 style="text-align: center; font-family: lucida sans;" title="Author - Anthony Lupica"> Programming Assignment 1 </h2> <br><br>
-
+        
         <!-- Unown images -->
         <img src="https://img.pokemondb.net/sprites/home/normal/unown-a.png" alt="Unown-A"></a>
         <img src="https://img.pokemondb.net/sprites/home/normal/unown-n.png" alt="Unown-N"></a>
@@ -36,5 +38,14 @@
         <img src="https://img.pokemondb.net/sprites/home/normal/unown-c.png" alt="Unown-C"></a>
         <img src="https://img.pokemondb.net/sprites/home/normal/unown-a.png" alt="Unown-A"></a>
         <img src="https://img.pokemondb.net/sprites/home/normal/unown-em.png" alt="Unown-!"></a>
+
+        <!-- -->
+
+        <p id="date"></p>
+
+        <button type="button"
+        onclick="document.getElementById('date').innerHTML = Date()">
+        Click for current Date and Time.</button> 
+
     </body>
 </html>
