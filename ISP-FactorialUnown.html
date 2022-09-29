@@ -60,12 +60,11 @@
         <button type="button" onclick="this.innerHTML= Date()"> When are you? </button> 
 
         <!-- Prompt for factorial input -->
-        <form id="factorial" style="text-align: center;">
-            Enter a non-negative number<br>
-            <input type="button" onclick="myFunction()" value="get factorial">
-            <input type="text">
-        </form>
+        <br><br><br><br><br><br>
 
-        
+        <div style="text-align: center;">
+            <input type="text" id="field">
+            <button onclick="doFactorial(document.getElementById('field').value)">get factorial!</button>
+        </div>
     </body>
 </html>

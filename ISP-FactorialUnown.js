@@ -46,3 +46,7 @@ window.onload = function whatBrowser()
     }
 }
 
+function doFactorial(input)
+{
+    
+}
