@@ -3,7 +3,21 @@
     <head>
         <!-- style background color, and images -->
         <style>
-            body { background-color: #C59E14; }
+            #container {
+                width: 100%;
+                height: 100%;
+                position: relative;
+            }
+            #animate { 
+                min-width: auto;
+                min-height: auto;
+                position: absolute;
+                background: red;
+            }
+
+            body { 
+                background-color: #C59E14; 
+            }
             
             img {
                 width: 100px;
@@ -23,24 +37,35 @@
         <h2 style="text-align: center; font-family: lucida sans;" title="Author - Anthony Lupica"> Programming Assignment 1 </h2> <br><br>
         
         <!-- Unown images -->
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-a.png" alt="Unown-A"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-n.png" alt="Unown-N"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-t.png" alt="Unown-T"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-h.png" alt="Unown-H"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-o.png" alt="Unown-O"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-n.png" alt="Unown-N"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-y.png" alt="Unown-Y"></a>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-a.png" alt="Unown-A"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-n.png" alt="Unown-N"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-t.png" alt="Unown-T"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-h.png" alt="Unown-H"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-o.png" alt="Unown-O"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-n.png" alt="Unown-N"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-y.png" alt="Unown-Y"></img>
 
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-l.png" style="padding-left:35px;" alt="Unown-L"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-u.png" alt="Unown-U"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-p.png" alt="Unown-P"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-i.png" alt="Unown-I"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-c.png" alt="Unown-C"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-a.png" alt="Unown-A"></a>
-        <img src="https://img.pokemondb.net/sprites/home/normal/unown-em.png" alt="Unown-!"></a>
-
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-l.png" style="padding-left:35px;" alt="Unown-L"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-u.png" alt="Unown-U"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-p.png" alt="Unown-P"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-i.png" alt="Unown-I"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-c.png" alt="Unown-C"></img>
+        <img src="https://img.pokemondb.net/sprites/home/normal/unown-a.png" alt="Unown-A"></img>
+        <span id="container">
+            <span id="animate"><img src="https://img.pokemondb.net/sprites/home/normal/unown-em.png" alt="Unown-!"></img></span>
+        </span>
+        
         <!-- dates -->
         <p> Original Due Date: Thursday, September 29, 2022 </p>
         <button type="button" onclick="this.innerHTML= Date()"> When are you? </button> 
+
+        <!-- Prompt for factorial input -->
+        <form id="factorial" style="text-align: center;">
+            Enter a non-negative number<br>
+            <input type="button" onclick="myFunction()" value="get factorial">
+            <input type="text">
+        </form>
+
+        
     </body>
 </html>
