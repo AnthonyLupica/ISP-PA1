@@ -46,7 +46,57 @@ window.onload = function whatBrowser()
     }
 }
 
+function move(input)
+{
+    document.getElementById('display').style.display = "none";
+
+    if (input < 0)
+    {
+        alert('"please... negative numbers confuse me"');
+        return;
+    }
+
+    let smooth = null;
+    const unown = document.getElementById("animate");   
+    
+    // offsets for x and y axis
+    let posY = 0;
+    let posX = 0;
+
+    clearInterval(smooth);
+    // call frame once every 5 milliseconds 
+    smooth = setInterval(frame, 7.5);
+  
+    function frame() 
+    {
+        if (posY == 285) 
+        {
+            // stop animation
+            clearInterval(smooth);
+            // call to display result
+            doFactorial(input);
+            
+            return;
+        } 
+        else 
+        {
+            ++posY; 
+            posX += 2;
+            
+            unown.style.top = posY + "px"; 
+            unown.style.right = posX + "px"; 
+        }
+    }
+}
+
 function doFactorial(input)
 {
-    
+    let result = 1;
+    for (let i = 1; i <= input; ++i)
+    {
+        result *= i;
+    }
+
+    document.getElementById("display").innerHTML = '"I, the factorial Unown, declare the result: ' + result + '"';
+    document.getElementById('display').style.display = "block";
 }

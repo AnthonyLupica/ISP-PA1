@@ -9,10 +9,10 @@
                 position: relative;
             }
             #animate { 
-                min-width: auto;
+                min-height: width;
                 min-height: auto;
                 position: absolute;
-                background: red;
+                background: #C59E14;
             }
 
             body { 
@@ -34,8 +34,8 @@
     </head>
     <body>
         <h1 style="text-align: center; font-family: lucida sans;"> Internet Systems Programming </h1>
-        <h2 style="text-align: center; font-family: lucida sans;" title="Author - Anthony Lupica"> Programming Assignment 1 </h2> <br><br>
-        
+        <h2 style="text-align: center; font-family: lucida sans;" title="Author - Anthony Lupica"> Programming Assignment 1 </h2> 
+       
         <!-- Unown images -->
         <img src="https://img.pokemondb.net/sprites/home/normal/unown-a.png" alt="Unown-A"></img>
         <img src="https://img.pokemondb.net/sprites/home/normal/unown-n.png" alt="Unown-N"></img>
@@ -57,14 +57,22 @@
         
         <!-- dates -->
         <p> Original Due Date: Thursday, September 29, 2022 </p>
-        <button type="button" onclick="this.innerHTML= Date()"> When are you? </button> 
+        <button type="button" onclick="this.innerHTML= Date()"> When are you? </button><br><br>
 
         <!-- Prompt for factorial input -->
-        <br><br><br><br><br><br>
-
         <div style="text-align: center;">
             <input type="text" id="field">
-            <button onclick="doFactorial(document.getElementById('field').value)">get factorial!</button>
+            <button onclick="move(document.getElementById('field').value)">get factorial!</button>
+            <br><br><br><br><br>
+            <p id="display"></p>
         </div>
+
+         <!-- video -->
+         <span style="position: fixed;">
+            <video width="200" height="200" style="border-style: solid;" controls>
+                <source src="tutorialPA1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </span>
     </body>
 </html>
